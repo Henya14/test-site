@@ -69,3 +69,13 @@ Version: 1.0.0
 .wertell-width-auto {
     width: auto ;
 }
+
+.wertell-padding-top {
+   padding-top: var(--wp--preset--spacing--80)
+}
+
+.wertell-no-padding-top-on-tablet {
+    @media (max-width: 64em) {
+        padding-top: 0 !important;
+    }
+}
