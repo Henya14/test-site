@@ -1,0 +1,31 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/block.json",
+	"apiVersion": 3,
+	"name": "create-block/animation-playground",
+	"version": "0.1.0",
+	"title": "Animation Playground",
+	"category": "widgets",
+	"icon": "smiley",
+	"description": "Example block scaffolded with Create Block tool.",
+	"example": {},
+	"supports": {
+		"html": false,
+		"color": {"background": true}
+	},
+	"attributes": {
+		"animationSettings": {
+			"type": "object",
+			"default": {
+				"Slide In": {"enabled": false, "duration": 0, "delay": 0, "animationStart": 0, "animationEnd": 0},
+				"Fade In": {"enabled": false, "duration": 0, "delay": 0, "startOpacity": 0, "endOpacity": 100},
+				"Zoom In": {"enabled": false, "duration": 0, "delay": 0, "animationStart": 0, "animationEnd": 100}
+			}
+		}
+	},
+	"textdomain": "animation-playground",
+	"editorScript": "file:./index.js",
+	"editorStyle": "file:./index.css",
+	"style": "file:./style-index.css",
+	"render": "file:./render.php",
+	"viewScript": "file:./view.js"
+}

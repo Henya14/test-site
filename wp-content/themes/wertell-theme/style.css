@@ -1,0 +1,71 @@
+/*
+Theme Name: Wertell Theme
+Template: blocksy
+Description: A custom child theme for the Blocksy theme.
+Author: Henrik Elo
+Version: 1.0.0
+*/
+
+/* Custom styles for the Blocksy Child theme go here */
+
+
+.wertell-background-fixed {
+    background-attachment: fixed;
+}
+
+.wertell-position-absolute {
+    position: absolute;
+}
+
+.wertell-position-relative {
+    position: relative;
+}
+
+.wertell-position-fixed {
+    position: fixed;
+}
+
+.wertell-position-sticky {
+    position: sticky;
+}
+
+.wertell-position-static {
+    position: static;
+}
+
+.wertell-z-index-0 {
+    z-index: 0;
+}
+
+.wertell-z-index-1 {
+    z-index: 1;
+}
+
+.wertell-z-index-2 {
+    z-index: 2;
+}
+
+.wertell-z-index-3 {
+    z-index: 3;
+}
+
+.wertell-z-index-4 {
+    z-index: 4;
+}
+
+.wertell-z-index-5 {
+    z-index: 5;
+}
+
+:root {
+    --wertell-background-size-width: 100%;
+    --wertell-background-size-height: 100%;
+}
+
+.wertell-background-size {
+    background-size: var(--wertell-background-size-width) var(--wertell-background-size-height) !important;
+}
+
+.wertell-width-auto {
+    width: auto ;
+}
