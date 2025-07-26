@@ -70,12 +70,74 @@ Version: 1.0.0
     width: auto ;
 }
 
-.wertell-padding-top {
-   padding-top: var(--wp--preset--spacing--80)
+.wertell-background-tint-10 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.1);
 }
 
-.wertell-no-padding-top-on-tablet {
-    @media (max-width: 64em) {
-        padding-top: 0 !important;
-    }
+.wertell-background-tint-20 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.2);
+}
+
+.wertell-background-tint-30 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.wertell-background-tint-40 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.wertell-background-tint-50 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.5);
+}
+.wertell-background-tint-60 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+.wertell-background-tint-70 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.7);
+}
+.wertell-background-tint-80 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.8);
+}
+.wertell-background-tint-90 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 0.9);
+}
+.wertell-background-tint-100 {
+    background-blend-mode: multiply;
+    background-color: rgba(0, 0, 0, 1);
+}
+
+.wertell-text-wrap-mode-nowrap {
+    white-space: nowrap !important;
+}
+@font-face {
+    font-family: 'Wertell Custom Font';
+    src:    url('./fonts/plus-jakarta-sans-normal-200.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-normal-300.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-normal-400.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-normal-500.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-normal-600.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-normal-700.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-normal-800.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-italic-200.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-italic-300.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-italic-400.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-italic-500.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-italic-600.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-italic-700.woff2') format('woff2'),
+            url('./fonts/plus-jakarta-sans-italic-800.woff2') format('woff2');
+           
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+:root {
+    --theme-font-family: 'Wertell Custom Font', sans-serif !important;
 }
