@@ -60,6 +60,8 @@ Version: 1.0.0
 :root {
     --wertell-background-size-width: 100%;
     --wertell-background-size-height: 100%;
+    --wertell-square-height: 50px;
+    --wertell-square-width: 50px;
 }
 
 .wertell-background-size {
@@ -116,6 +118,57 @@ Version: 1.0.0
 .wertell-text-wrap-mode-nowrap {
     white-space: nowrap !important;
 }
+
+.wertell-content-wrap-mode-nowrap {
+    overflow: hidden;
+    width: max-content;
+}
+
+.wertell-square {
+    width: var(--wertell-square-width);
+    height: var(--wertell-square-height);
+}
+
+.wertell-circle {
+    width: var(--wertell-square-width);
+    height: var(--wertell-square-height);
+    border-radius: 50%;
+}
+
+.wertell-skew-x-10 {
+    transform: skewX(10deg);
+}
+
+.wertell-skew-x-minus10 {
+    transform: skewX(-10deg);
+}
+
+.wertell-parallelogramma {    
+    clip-path: polygon(10% 0%, 100% 0%, 90% 100%, 0% 100%);
+}
+
+.wertell-drop-shadow {
+    box-shadow: 0px 7px rgba(0, 0, 0, 0.1);
+}
+@media screen and (max-width: 35.5em) {
+    .hide-on-mobile {
+        display: none !important;
+    }
+
+    .wertell-no-left-margin-on-mobile {
+        margin-left: 0 !important;
+    }
+    .wertell-no-right-margin-on-mobile {
+        margin-right: 0 !important;
+    }
+    .wertell-no-top-margin-on-mobile {
+        margin-top: 0 !important;
+    }
+    .wertell-no-bottom-margin-on-mobile {
+        margin-bottom: 0 !important;
+    }
+}
+
 @font-face {
     font-family: 'Wertell Custom Font';
     src:    url('./fonts/plus-jakarta-sans-normal-200.woff2') format('woff2'),
