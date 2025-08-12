@@ -167,6 +167,10 @@ Version: 1.0.0
     .wertell-no-bottom-margin-on-mobile {
         margin-bottom: 0 !important;
     }
+
+    .wertell-text-align-left-on-mobile {
+        text-align: left !important;
+    }
 }
 
 @font-face {
