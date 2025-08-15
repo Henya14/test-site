@@ -150,11 +150,22 @@ Version: 1.0.0
 .wertell-drop-shadow {
     box-shadow: 0px 7px rgba(0, 0, 0, 0.1);
 }
+
+.wertell-rotate-10 {
+    transform: rotate(10deg);
+}
+
+.wertell-rotate-minus10 {
+    transform: rotate(-10deg);
+}
+
 @media screen and (max-width: 35.5em) {
     .hide-on-mobile {
         display: none !important;
     }
-
+    .wertell-no-padding-on-mobile {
+        padding: 0 !important;
+    }
     .wertell-no-left-margin-on-mobile {
         margin-left: 0 !important;
     }
@@ -171,7 +182,45 @@ Version: 1.0.0
     .wertell-text-align-left-on-mobile {
         text-align: left !important;
     }
+    .wertell-no-rotate-on-mobile {
+        transform: rotate(0deg) !important;
+    }
+    .wertell-rotate-10-on-mobile {
+        transform: rotate(10deg) !important;
+    }
+    .wertell-rotate-minus10-on-mobile {
+        transform: rotate(-10deg) !important;
+    }
 }
+
+
+@media screen and (max-width: 48em) {
+    .hide-on-tablet {
+        display: none !important;
+    }
+
+    .wertell-no-padding-on-tablet {
+        padding: 0 !important;
+    }
+    .wertell-no-rotate-on-tablet {
+        transform: rotate(0deg) !important;
+    }
+
+    .wertell-text-align-left-on-tablet {
+        text-align: left !important;
+    }
+}
+
+@media screen and (max-width: 64em) {
+    .hide-on-lg {
+        display: none !important;
+    }
+
+    .wertell-no-rotate-on-lg {
+        transform: rotate(0deg) !important;
+    }
+}
+
 
 @font-face {
     font-family: 'Wertell Custom Font';
