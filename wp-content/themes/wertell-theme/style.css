@@ -159,6 +159,10 @@ Version: 1.0.0
     transform: rotate(-10deg);
 }
 
+.wertell-primary-text-shadow {
+    text-shadow: 2px 3px 0 var(--wp--preset--color--palette-color-1);
+}
+
 @media screen and (max-width: 35.5em) {
     .hide-on-mobile {
         display: none !important;
